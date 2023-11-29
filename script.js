@@ -3,15 +3,15 @@
 // and normal year must divisible by 4. 
 // noth known as leap year
 
- let typeofyear = function daysOfAYear(year){
-	if(year%4==0 || year%400 == 0){
-		 return 366;
-	}
-	 else{
-		  return 365;
-	 }
+ //your JS code here. If required.
+function daysOfAYear(y) {
+
+	if((y%4==0&&y%100!=0)||(y%400==0))
+		return 366;
+	return 365;  
 }
-  let y = prompt("Enter the year")
- daysOfAYear(y);
+
+let x=prompt();
+alert(daysOfAYear(x));
 
  
